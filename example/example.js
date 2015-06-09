@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 'use strict';
 
+// Bust process.argv sniffing.
+require('chalk').enabled = true;
+
 var lsView = require('..');
 
 var minimist = require('minimist');
