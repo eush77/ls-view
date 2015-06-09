@@ -1,0 +1,32 @@
+{
+  "name": "ls-view",
+  "version": "0.0.0",
+  "description": "ls-styled output for a list of files, with color and type suffixes",
+  "author": "Eugene Sharygin <eush77@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/eush77/ls-view",
+  "repository": "eush77/ls-view",
+  "bugs": {
+    "url": "https://github.com/eush77/ls-view/issues"
+  },
+  "keywords": [
+    "ls",
+    "file",
+    "directory",
+    "symlink",
+    "fifo",
+    "socket",
+    "filename",
+    "console",
+    "color",
+    "indicator",
+    "suffix",
+    "output",
+    "view"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
