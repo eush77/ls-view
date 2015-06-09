@@ -27,6 +27,8 @@
     "output",
     "view"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^1.0.0"
+  },
   "devDependencies": {}
 }
