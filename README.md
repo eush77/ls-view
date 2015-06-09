@@ -13,13 +13,13 @@ Turns type-annotated list of files into ls-styled output. Applies colors and app
 
 `ls-view` appends type indicators based on the table below.
 
-| Type       | Suffix |
-| :--------: | :----: |
-| directory  | `/`    |
-| symlink    | `@`    |
-| executable | `*`    |
-| fifo       | `|`    |
-| socket     | `=`    |
+| Type       | Suffix              |
+| :--------: | :-----------------: |
+| directory  | `/`                 |
+| symlink    | `@`                 |
+| executable | `*`                 |
+| fifo       | <code>&#x7c;</code> |
+| socket     | `=`                 |
 
 ## API
 
@@ -29,14 +29,14 @@ Turns list of files into a string. Each file is an object with `name` and (optio
 
 #### `opt.color`
 
-Type: `Boolean`
+Type: `Boolean`<br>
 Default: `true`
 
 Enables colorful output.
 
 #### `opt.suffixes`
 
-Type: `Boolean`
+Type: `Boolean`<br>
 Default: `true`
 
 Enables type suffixes.
