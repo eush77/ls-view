@@ -41,6 +41,14 @@ Default: `true`
 
 Enables type suffixes.
 
+### `lsView.suffixes`
+
+Mapping from types to suffixes.
+
+### `lsView.colors`
+
+Mapping from types to color functions.
+
 ## Install
 
 ```
