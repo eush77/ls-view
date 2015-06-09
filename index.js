@@ -4,10 +4,18 @@ var chalk = require('chalk');
 
 
 var lsView = function (files, opt) {
+  opt = opt || {};
+  if (opt.color == null) {
+    opt.color = true;
+  }
+  if (opt.suffixes == null) {
+    opt.suffixes = true;
+  }
+
   return files.map(function (file) {
-    var color = lsView.colors[file.type];
+    var color = opt.color && lsView.colors[file.type];
     var path = color ? color(file.name) : file.name;
-    var suffix = lsView.suffixes[file.type] || '';
+    var suffix = (opt.suffixes && lsView.suffixes[file.type]) || '';
     return path + suffix;
   }).join('\n');
 };
