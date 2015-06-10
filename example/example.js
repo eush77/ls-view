@@ -13,15 +13,16 @@ var minimist = require('minimist'),
 (function (opts) {
   console.log(lsView([
     { name: 'file1' },
-    { name: 'symlink', type: 'symlink' },
+    { name: 'link', type: 'symlink' },
     { name: 'file2' },
-    { name: 'dir', type: 'directory' },
+    { name: 'dir2', type: 'directory' },
+    { name: 'dir1', type: 'directory' },
     { name: 'file3' },
     { name: 'a.out', type: 'executable' },
-    { name: 'file4' },
-    { name: 'file5' },
-    { name: 'file6' },
+    { name: 'regular4' },
+    { name: 'second-to-last5' },
+    { name: 'the-last6' },
     { name: 'fifo', type: 'fifo' },
-    { name: 'socket', type: 'socket' }
+    { name: 's0cket', type: 'socket' }
   ], opts));
 }(camelCaseKeys(minimist(process.argv.slice(2)))));
