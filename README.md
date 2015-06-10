@@ -41,6 +41,13 @@ Default: `true`
 
 Enables type suffixes.
 
+#### `opt.sort`
+
+Type: `Boolean`<br>
+Default: `true`
+
+Sorts files by name.
+
 ### `lsView.suffixes`
 
 Mapping from types to suffixes.

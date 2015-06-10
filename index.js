@@ -1,6 +1,7 @@
 'use strict';
 
-var chalk = require('chalk');
+var chalk = require('chalk'),
+    cmpby = require('cmpby');
 
 
 var lsView = function (files, opt) {
@@ -12,12 +13,18 @@ var lsView = function (files, opt) {
     opt.suffixes = true;
   }
 
-  return files.map(function (file) {
-    var color = opt.color && lsView.colors[file.type];
-    var path = color ? color(file.name) : file.name;
-    var suffix = (opt.suffixes && lsView.suffixes[file.type]) || '';
-    return path + suffix;
-  }).join('\n');
+  if (opt.sort == null || opt.sort) {
+    files = files.sort(cmpby(function (file) { return file.name }));
+  }
+
+  return files
+    .map(function (file) {
+      var color = opt.color && lsView.colors[file.type];
+      var path = color ? color(file.name) : file.name;
+      var suffix = (opt.suffixes && lsView.suffixes[file.type]) || '';
+      return path + suffix;
+    })
+    .join('\n');
 };
 
 

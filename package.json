@@ -28,7 +28,8 @@
     "view"
   ],
   "dependencies": {
-    "chalk": "^1.0.0"
+    "chalk": "^1.0.0",
+    "cmpby": "^0.1.0"
   },
   "devDependencies": {
     "minimist": "^1.1.1"
