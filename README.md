@@ -41,6 +41,13 @@ Default: `true`
 
 Enables type suffixes.
 
+#### `opt.groupDirectoriesFirst`
+
+Type: `Boolean`<br>
+Default: `true`
+
+Groups directories before files.
+
 #### `opt.sort`
 
 Type: `Boolean`<br>
