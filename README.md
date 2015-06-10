@@ -9,6 +9,29 @@ Turns type-annotated list of files into ls-styled output. Applies colors and app
 [david]: https://david-dm.org/eush77/ls-view
 [david-badge]: https://david-dm.org/eush77/ls-view.png
 
+## Example
+
+```js
+var lsView = require('ls-view');
+
+lsView([
+  { name: 'file1' },
+  { name: 'link', type: 'symlink' },
+  { name: 'file2' },
+  { name: 'dir2', type: 'directory' },
+  { name: 'dir1', type: 'directory' },
+  { name: 'file3' },
+  { name: 'a.out', type: 'executable' },
+  { name: 'regular4' },
+  { name: 'second-to-last5' },
+  { name: 'the-last6' },
+  { name: 'fifo', type: 'fifo' },
+  { name: 's0cket', type: 'socket' }
+])
+```
+
+![output](example/output.png)
+
 ## Type indicators
 
 `ls-view` appends type indicators based on the table below.
